@@ -17,8 +17,8 @@ public class music_app implements KeyListener {
 		
 		text.addKeyListener(this);
 		
-		frame.getContentPane().add(c);
-		frame.getContentPane().add(BorderLayout.SOUTH, b);
+		frame.getContentPane().add(text);
+		frame.getContentPane().add(BorderLayout.SOUTH, button);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setSize(500,500);
 		System.out.print("ok");
