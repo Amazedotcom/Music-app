@@ -11,18 +11,18 @@ import javax.sound.midi.*;
 public class music_app implements KeyListener {
 	
 	public void frame(){
-		JFrame a = new JFrame();
-		JTextArea c = new JTextArea();
-		JButton b = new JButton("save");
+		JFrame frame = new JFrame();
+		JTextArea text = new JTextArea();
+		JButton button = new JButton("save");
 		
-		c.addKeyListener(this);
+		text.addKeyListener(this);
 		
-		a.getContentPane().add(c);
-		a.getContentPane().add(BorderLayout.SOUTH, b);
-		a.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		a.setSize(500,500);
+		frame.getContentPane().add(c);
+		frame.getContentPane().add(BorderLayout.SOUTH, b);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setSize(500,500);
 		System.out.print("ok");
-		a.setVisible(true);
+		frame.setVisible(true);
 		
 	}
 	
