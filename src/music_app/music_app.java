@@ -22,10 +22,8 @@ public class music_app implements KeyListener {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setSize(500,500);
 		System.out.print("ok");
-		frame.setVisible(true);
-		
+		frame.setVisible(true);	
 	}
-	
 	public void play(int notes){
 		try{
 		Sequencer player = MidiSystem.getSequencer();
@@ -48,35 +46,20 @@ public class music_app implements KeyListener {
 		
 		player.start();
 		}catch(Exception ex){
-			ex.printStackTrace();
-			
+			ex.printStackTrace();	
 		}
-		
 	}
-
-
 	public void keyPressed(KeyEvent arg0) {
 		//play(note);
 		
 	}
-
-
-
-
 	public void keyReleased(KeyEvent arg0) {
 		int note = (int)(Math.random()*120);
-		play(note);
-		
+		play(note);	
 	}
-
-
-
-
 	public void keyTyped(KeyEvent arg0) {
-		// TODO Auto-generated method stub
+		// play(note);
 	}
-
-	
 	public static void main(String[] args){
 		music_app app = new music_app();
 		app.frame();
